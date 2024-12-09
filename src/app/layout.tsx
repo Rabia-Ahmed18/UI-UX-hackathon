@@ -1,23 +1,16 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import {Inter ,  Poppins, } from "next/font/google"
+import {  Poppins, } from "next/font/google"
 
 const poppins= Poppins({
   subsets: ['latin'],
   weight: ['400' , '700'],
 });
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['400' , '500' , '700']
-});
 
 
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+
+
 
 export const metadata: Metadata = {
   title: "Create Next App",

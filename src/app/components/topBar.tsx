@@ -1,7 +1,7 @@
 'use client';
 
 import { FaEnvelope, FaPhoneAlt, FaUser, FaHeart, FaShoppingCart } from 'react-icons/fa'; // Import necessary icons
-import { useState } from 'react'; // To manage dropdown state
+import { useState } from 'react'; 
 
 const TopBar = () => {
   const [languageDropdown, setLanguageDropdown] = useState(false);
@@ -9,11 +9,9 @@ const TopBar = () => {
 
   return (
     <div className="bg-violet-700 text-white py-2 text-sm flex items-center justify-center">
-      {/* TopBar Container */}
+     
       <div className="w-full max-w-[1200px] flex items-center justify-between px-4">
-        {/* Left Section */}
         <div className="flex items-center justify-center gap-6 w-full sm:w-auto">
-          {/* Email */}
           <a
             href="mailto:mhhasanul@gmail.com"
             className="flex items-center gap-2 hover:text-gray-200"
@@ -31,9 +29,8 @@ const TopBar = () => {
           </a>
         </div>
 
-        {/* Right Section */}
+        
         <div className="flex items-center justify-center gap-6 w-full sm:w-auto ">
-          {/* Language Selector */}
           <div
             className="relative cursor-pointer flex items-center gap-1  "
             onMouseEnter={() => setLanguageDropdown(true)}

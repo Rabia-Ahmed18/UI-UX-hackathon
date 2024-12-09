@@ -1,4 +1,3 @@
-import { Josefin_Sans } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -14,8 +13,7 @@ const config: Config = {
       },
       fontFamily :{
         poppins:['Poppins' , 'sans-serif'],
-        inter: ['Inter' , 'sans-serif'],
-        Josefin_Sans: ['Josefin_Sans' , 'sans-serif']
+  
       },
       colors: {
         

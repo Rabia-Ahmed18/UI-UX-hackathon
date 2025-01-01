@@ -1,7 +1,11 @@
-'use client';
+'use client'
 
-import { FaEnvelope, FaPhoneAlt, FaUser, FaHeart, FaShoppingCart } from 'react-icons/fa'; // Import necessary icons
+
+ 
+import { FaEnvelope, FaPhoneAlt, FaUser, FaHeart, FaShoppingCart } from 'react-icons/fa'; 
 import { useState } from 'react'; 
+import Link from 'next/link';
+
 
 const TopBar = () => {
   const [languageDropdown, setLanguageDropdown] = useState(false);
@@ -12,21 +16,21 @@ const TopBar = () => {
      
       <div className="w-full max-w-[1200px] flex items-center justify-between px-4">
         <div className="flex items-center justify-center gap-6 w-full sm:w-auto">
-          <a
-            href="mailto:mhhasanul@gmail.com"
+          <Link
+            href="mailto:abc@gmail.com"
             className="flex items-center gap-2 hover:text-gray-200"
           >
             <FaEnvelope />
-            <span>mhhasanul@gmail.com</span>
-          </a>
-          {/* Phone */}
-          <a
+            <span>abc@gmail.com</span>
+          </Link>
+          
+          <Link
             href="tel:1234567890"
             className="flex items-center gap-2 hover:text-gray-200"
           >
             <FaPhoneAlt />
             <span>(12345)67890</span>
-          </a>
+          </Link>
         </div>
 
         
@@ -64,21 +68,21 @@ const TopBar = () => {
             )}
           </div>
 
-          <a href="/login" className="flex items-center gap-2 cursor-pointer hover:text-gray-200">
+          <Link href="/myAccount" className="flex items-center gap-2 cursor-pointer hover:text-gray-200">
             <FaUser />
             <span>Login</span>
-          </a>
+          </Link>
 
       
-          <a href="/wishlist" className="flex items-center gap-2 cursor-pointer hover:text-gray-200">
+          <Link href="/wishlist" className="flex items-center gap-2 cursor-pointer hover:text-gray-200">
             <FaHeart />
             <span>Wishlist</span>
-          </a>
+          </Link>
 
           
-          <a href="/cart" className="cursor-pointer hover:text-gray-200">
+          <Link href="/cart" className="cursor-pointer hover:text-gray-200">
             <FaShoppingCart />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

@@ -24,19 +24,19 @@ export default function Haeder (){
               <Link href='javascript:void(0)'
                 className='lg:hover:text-pink-500 block font-semibold text-[15px]'>Home</Link>
             </li>
-            <li className='max-lg:border-b max-lg:py-3 px-3'><Link href='javascript:void(0)'
+            <li className='max-lg:border-b max-lg:py-3 px-3'><Link href='#'
               className='lg:hover:text-pink-500 text-gray-800 block font-semibold text-[15px]'>Pages</Link>
             </li>
-            <li className='max-lg:border-b max-lg:py-3 px-3'><Link href='javascript:void(0)'
+            <li className='max-lg:border-b max-lg:py-3 px-3'><Link href=''
               className='lg:hover:text-pink-500 text-gray-800 block font-semibold text-[15px]'>Products</Link>
             </li>
-            <li className='max-lg:border-b max-lg:py-3 px-3'><Link href='javascript:void(0)'
+            <li className='max-lg:border-b max-lg:py-3 px-3'><Link href=''
               className='lg:hover:text-pink-500 text-gray-800 block font-semibold text-[15px]'>Blog</Link>
             </li>
-            <li className='max-lg:border-b max-lg:py-3 px-3'><Link href='javascript:void(0)'
+            <li className='max-lg:border-b max-lg:py-3 px-3'><Link href=''
               className='lg:hover:text-pink-500 text-gray-800 block font-semibold text-[15px]'>Shop</Link>
             </li>
-            <li className='max-lg:border-b max-lg:py-3 px-3'><Link href='javascript:void(0)'
+            <li className='max-lg:border-b max-lg:py-3 px-3'><Link href=''
               className='lg:hover:text-pink-500 text-gray-800 block font-semibold text-[15px]'>Contacts</Link>
             </li>
           </ul>

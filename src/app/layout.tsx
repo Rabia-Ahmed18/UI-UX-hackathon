@@ -4,6 +4,7 @@ import {  Poppins, } from "next/font/google"
 import TopBar from "./components/topBar";
 import Header from './components/header';
 import Footer from "./components/footer";
+// import script from "next/script";
 
 const poppins= Poppins({
   subsets: ['latin'],

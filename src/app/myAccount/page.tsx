@@ -1,6 +1,8 @@
 
 import Image from 'next/image';
 import imageBottom from '../public/images/imageBottom.png';
+import Link from 'next/link';
+import ShopGridDefault from '../shopGridDefault/page';
 
 export default function Login(){
 
@@ -11,12 +13,28 @@ export default function Login(){
 <div className="w-[1920px] h-[287px] bg-[#E7E4F8] ">
  <div className="w-[400px] h-[62px] py-20 px-20 ">
   <h1 className="font-bold text-3xl justify-center mb-3 ">My Account</h1>
-  <ul className="flex space-x-5 py-0 list-disc">
-    <li className="hover:text-pink-500 ">Home</li>
-    <li className="hover:text-pink-500">Pages </li>
 
-    <li className="hover:text-pink-500">My Account</li>
-  </ul>
+
+<ul className="flex items-center justify-center space-x-4 font-[sans-serif]">
+      <li className="text-gray-500 text-base cursor-pointer">
+      
+
+         Home
+      
+      </li>
+      <li className="text-gray-500 text-lg">.</li>
+      <li className="text-gray-500 text-base cursor-pointer">
+        pages
+      </li>
+      <li className="text-gray-500 text-lg">.</li>
+      <li className="text-[#333] text-base font-bold cursor-pointer">
+       My account 
+      </li>
+    </ul>
+
+
+
+
  </div>  
 
 </div>
@@ -65,6 +83,7 @@ export default function Login(){
                               height={93}
                               className='ml-20'/>
                             </div>
+                            <ShopGridDefault/>
                              </>
                                  
                                 )

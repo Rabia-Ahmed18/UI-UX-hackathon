@@ -1,9 +1,18 @@
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
+
 import Heckto from '../public/images/Hekto.png';
 
+import { useState } from "react";
+
+
+
+
 export default function Haeder (){
+
+  const [homeDropdown, setHomeDropdown] = useState(false);
   return (
 
 
@@ -21,8 +30,40 @@ export default function Haeder (){
               
             
             <li className='max-lg:border-b max-lg:py-3 px-3'>
-              <Link href='javascript:void(0)'
-                className='lg:hover:text-pink-500 block font-semibold text-[15px]'>Home</Link>
+              {/* <Link href='/'
+                className='lg:hover:text-pink-500 block font-semibold text-[15px]'>Home</Link> */}
+
+                
+<div
+            className="relative cursor-pointer flex items-center gap-1"
+            onMouseEnter={() => setHomeDropdown(true)}
+            onMouseLeave={() => setHomeDropdown(false)}
+          >
+            <span>Home</span>
+            <span className="text-xs">▼</span>
+            {homeDropdown && (
+              <div className="absolute top-8 bg-white text-black rounded shadow-md p-2 ">
+                <div className="hover:bg-gray-200 px-4 py-1 cursor-pointer">Shop Grid Defaul</div>
+                <div className="hover:bg-gray-200 px-4 py-1 cursor-pointer">Shop List</div>
+                <div className="hover:bg-gray-200 px-4 py-1 cursor-pointer">Shop Left SIdebar</div>
+                <div className="hover:bg-gray-200 px-4 py-1 cursor-pointer">Product Details</div>
+                <div className="hover:bg-gray-200 px-4 py-1 cursor-pointer">Shoping Cart </div>
+                <div className="hover:bg-gray-200 px-4 py-1 cursor-pointer">Order Completed</div>
+                <div className="hover:bg-gray-200 px-4 py-1 cursor-pointer">Hecto Demo</div>
+                <div className="hover:bg-gray-200 px-4 py-1 cursor-pointer">My Account</div>
+                <div className="hover:bg-gray-200 px-4 py-1 cursor-pointer">Blog Page</div>
+                <div className="hover:bg-gray-200 px-4 py-1 cursor-pointer">Single Blog</div>
+                <div className="hover:bg-gray-200 px-4 py-1 cursor-pointer">ABOUT US</div>
+                <div className="hover:bg-gray-200 px-4 py-1 cursor-pointer">CONTACT US</div>
+                <div className="hover:bg-gray-200 px-4 py-1 cursor-pointer">Faq</div>
+              </div>
+            )}
+          </div>
+
+
+
+
+
             </li>
             <li className='max-lg:border-b max-lg:py-3 px-3'><Link href='#'
               className='lg:hover:text-pink-500 text-gray-800 block font-semibold text-[15px]'>Pages</Link>

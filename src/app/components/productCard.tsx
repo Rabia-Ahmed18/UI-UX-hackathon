@@ -30,7 +30,7 @@ const ProductCard= () => {
           </li>
         </ul>
         <div className='flex'>
-        <button className="bg-pink-600 text-white px-6 py-2 rounded-none font-semifold mb-4 ">
+        <button className="bg-pink-600 text-white px-6 py-2 rounded-none font-semifold mb-4 hover:bg-pink-500 ">
           Add To Cart
         </button>
        

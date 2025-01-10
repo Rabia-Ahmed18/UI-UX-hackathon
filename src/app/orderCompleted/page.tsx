@@ -1,14 +1,31 @@
+
+
+
+
 export default function OrderCompleted (){
     return (
 <>
 <div className="w-[1920px] h-[287px] bg-[#E7E4F8] ">
- <div className="w-[400px] h-[62px] py-20 px-20 ">
-  <h1 className="font-bold text-3xl justify-center mb-3 ">My Account</h1>
-  <ul className="flex space-x-5 py-0 list-disc">
-    <li className="hover:text-pink-500 ">Home</li>
-    <li className="hover:text-pink-500">Pages</li>
-    <li className="hover:text-pink-500">Order Completed</li>
-  </ul>
+ <div className="w-[500px] h-[62px] py-20 px-20 ">
+  <h1 className="font-bold text-4xl justify-center mb-3  ">Order Completed</h1>
+ 
+
+  <ul className="flex items-center justify-center space-x-4 font-[sans-serif]">
+      <li className="text-black text-base cursor-pointer">
+        Home
+      </li>
+      <li className="text-black text-lg">.</li>
+      <li className="text-black text-base cursor-pointer">
+        Pages
+      </li>
+      <li className="text-black text-lg">.</li>
+      <li className=" text-base  cursor-pointer hover:text-pink-500">
+        Order Completed
+      </li>
+    </ul>
+
+
+
  </div>  
 
 </div>

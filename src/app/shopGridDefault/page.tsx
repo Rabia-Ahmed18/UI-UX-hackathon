@@ -15,11 +15,11 @@ export default function ShopGridDefault (){
       const [perPage, setPerPage] = useState(10);
       const [sortBy, setSortBy] = useState('bestMatch');
     
-      const handlePerPageChange = (event:any) => {
+      const handlePerPageChange = (event: React.ChangeEvent<HTMLSelectElement>): void => {
         setPerPage(parseInt(event.target.value, 10));
       };
     
-      const handleSortByChange = (event:any) => {
+      const handleSortByChange = (event: React.ChangeEvent<HTMLSelectElement>): void => {
         setSortBy(event.target.value);
       };
 

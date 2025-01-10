@@ -1,5 +1,5 @@
 import Image from "next/image";
-import blueSofa from "../public/images/blueSofa.png";
+
 import freedelivery from "../public/images/freedelivery.png";
 import premiumquality from "../public//images/premiumquality.png";
 import hoursicon from "../public/images/hoursicon.png";

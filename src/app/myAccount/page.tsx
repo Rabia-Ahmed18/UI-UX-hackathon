@@ -1,7 +1,6 @@
 
 import Image from 'next/image';
 import imageBottom from '../public/images/imageBottom.png';
-import Link from 'next/link';
 import ShopGridDefault from '../shopGridDefault/page';
 
 export default function Login(){
@@ -41,24 +40,24 @@ export default function Login(){
 <div className="flex items-center justify-center min-h-screen  ">
 <div className="bg-white p-8 rounded-sm  w-[544px] h-[474px] max-w-sm border  focus:shadow-outline">
   <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
-   <p className="text-center mb-6 text-gray-400">Please login using account detail below.</p>
+   <p className="text-center mb-6 text-gray-400 text-sm">Please login using account detail below.</p>
     <form> <div className="mb-4">
       <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
          </label> 
         <input type="email" id="email"
-         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-600 leading-tight focus:outline-none focus:shadow-outline"
+         className="shadow appearance-none border text-sm rounded w-full py-2 px-3 text-gray-600 leading-tight focus:outline-none focus:shadow-outline"
          placeholder="Email Address" />
           </div>
            <div className="mb-6">
               <label className="block text-gray-600 text-sm font-bold mb-2" htmlFor="password">
                 </label>
                  <input type="password" id="password"
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-600 mb-3 leading-tight focus:outline-none focus:shadow-outline" 
+                  className="shadow text-sm appearance-none border rounded w-full py-2 px-3 text-gray-600 mb-3 leading-tight focus:outline-none focus:shadow-outline" 
                   placeholder="Password" /> 
                   </div> 
                   <div className="flex items-center justify-between mb-6"> 
                    <a href="#" 
-                   className="inline-block align-baseline  text-sm text-gray-400 hover:text-pink-800"> Forgot your password? 
+                   className="inline-block align-baseline  text-sm text-gray-400 hover:text-pink-800 "> Forgot your password? 
                    </a>
                     </div>
                      <div className="flex items-center justify-center">

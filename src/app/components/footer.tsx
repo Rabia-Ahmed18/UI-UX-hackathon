@@ -15,7 +15,7 @@ function Footer() {
 
     <div className="lg:w-1/4 md:w-1/2 w-full px-4  ">
         <h2 className="title-font font-bold text-black tracking-widest text-lg mb-3 gap-y-10 ">
-        Hekto
+       <Link href={'/'}> Hekto</Link>
         </h2>
         <div className="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
           <div className="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2 ">
@@ -73,7 +73,9 @@ function Footer() {
         </h2>
         <nav className="list-none mb-10 space-y-3 ">
           <li>
-            <a className="text-gray-600 hover:text-gray-800">My Account</a>
+            
+            <Link  href={'/myAccount'} className="text-gray-600 hover:text-gray-800">My Account</Link>
+            
           </li>
           <li>
             <a className="text-gray-600 hover:text-gray-800">Discount</a>
@@ -95,7 +97,7 @@ function Footer() {
         </h2>
         <nav className="list-none mb-10  space-y-3">
           <li>
-            <a className="text-gray-600 hover:text-gray-800">Blog</a>
+            <Link href={'/blog'} className="text-gray-600 hover:text-gray-800">Blog</Link>
           </li>
           <li>
             <a className="text-gray-600 hover:text-gray-800">Browse the Shop</a>
@@ -159,4 +161,5 @@ function Footer() {
 export default Footer
 
         
+           
          

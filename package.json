@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/josefin-sans": "^5.1.1",
     "@sanity/vision": "^3.68.3",
     "next": "14.2.16",
     "next-sanity": "^9.8.32",

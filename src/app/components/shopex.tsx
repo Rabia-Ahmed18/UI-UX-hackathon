@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 
 import freedelivery from "../public/images/freedelivery.png";
@@ -20,7 +21,7 @@ export default function Shopex() {
           height={65} 
           width={65}
            alt="cashback"
-         className="ml-20"
+         className="ml-20 "
             />
           <div className="text-center h-[127px] w-[217px]">
             <div className="font-bold text-xl mt-9   text-blue-900">

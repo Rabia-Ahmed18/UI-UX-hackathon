@@ -1,7 +1,18 @@
 "use client";
 
 import { useState } from 'react';
-import F1 from '../public/images/F1.png';
+import grayChair from '../public/images/grayChair.png';
+import whiteChair from '../public/images/whiteChair.png';
+import pinkSofa from '../public/images/pinkSofa.png';
+import bag from '../public/images/bag.png'
+import watch1 from '../public/images/watch1.png';
+import brownSofa from '../public/images/brownSofa.png';
+
+import watch2 from '../public/images/watch2.png';
+import watch3 from '../public/images/watch3.png';
+import blackHeadphone from '../public/images/blackHeadphone.png';
+import redHeadphone from '../public/images/redHeadphone.png';
+import camera from '../public/images/camera.png';
 import Image from 'next/image';
 
 export default function ShopGridDefault (){
@@ -104,72 +115,255 @@ export default function ShopGridDefault (){
         
   
  
- <div className="bg-white shadow-md rounded-lg  w-[276px] h-[363px] overflow-hidden grid-cols-3">
-      <div className="relative h-48">
+   
+
+      <div className="min-h-screen  flex items-center justify-center  grid grid-cols-4 grid-flow-rows gap-4">
+  
+
+  <div className="flex flex-col items-center bg-white w-[270px] h-[363px]  rounded-md p-4 ">
         <Image
-          src={F1}
-          height={201}
+          src={grayChair}
           width={201}
-          alt="Product Image"
-          
-          
+          height={200}
+          alt="Chair"
+          className="object-cover  bg-gray-50 p-9   w-[270px] h-[280px]"
         />
-      </div>
-      <div className="flex items-center ml-20 mt-2">
-          <span className="bg-orange-600 text-white rounded-full px-2 py-1 text-xs">
-                  </span>
-          <span className="ml-2 bg-pink-500 text-white rounded-full px-2 py-1 text-xs">
-        
-          </span>
-          <span className="ml-2 bg-purple-500 text-white rounded-full px-2 py-1 text-xs">
-                  </span>
+       
+        <h2 className="text-blue-900 text-lg font-semibold mt-4">Vel elit euismod</h2>
+        <div className="flex space-x-2 mt-2">
+          <span className="w-4 h-4 bg-orange-500 rounded-full"></span>
+          <span className="w-4 h-4 bg-pink-500 rounded-full"></span>
+          <span className="w-4 h-4 bg-purple-500 rounded-full"></span>
         </div>
-      <div className="p-4">
-        <h2 className="text-lg font-bold text-gray-900">Ultrices mauris sit</h2>
-        <div className="flex items-center mt-2">
-          <span className="text-lg  text-blue-800">$26.00</span>
-          <span className="ml-2 text-pink-500 line-through">$42.00</span>
+        <div className="flex items-center mt-4">
+          <span className="text-blue-900 text-sm font-thin">$26.00</span>
+          <span className="text-pink-500 text-sm font-thin line-through ml-2">$42.00</span>
         </div>
-      
+   
       </div>
+  <div className="flex flex-col items-center bg-white p-4 rounded-lg w-[270px] h-[363px] ">
+  <Image
+          src={brownSofa}
+          alt="Chair"
+          width={169}
+          height={169}
+          className=" object-cover p-9 bg-gray-50 w-[270px] h-[280px] "
+        />
+       
+        <h2 className="text-blue-900 text-lg font-semibold mt-4">Vel elit euismod</h2>
+        <div className="flex space-x-2 mt-2">
+          <span className="w-4 h-4 bg-orange-500 rounded-full"></span>
+          <span className="w-4 h-4 bg-pink-500 rounded-full"></span>
+          <span className="w-4 h-4 bg-purple-500 rounded-full"></span>
+        </div>
+        <div className="flex items-center mt-4">
+          <span className="text-blue-900 text-sm font-thin">$26.00</span>
+          <span className="text-pink-500 text-sm font-thin line-through ml-2">$42.00</span>
+        </div>
+      </div>
+  <div className="flex flex-col items-center bg-white p-4 rounded-lg  w-[270px] h-[363px]">
+  <Image
+          src={whiteChair}
+          alt="Chair"
+          width={201}
+          height={201}
+          className="object-cover bg-gray-50 p-9 w-[270px] h-[280px]"
+        />
+       
+        <h2 className="text-blue-900 text-lg font-semibold mt-4">Vel elit euismod</h2>
+        <div className="flex space-x-2 mt-2">
+          <span className="w-4 h-4 bg-orange-500 rounded-full"></span>
+          <span className="w-4 h-4 bg-pink-500 rounded-full"></span>
+          <span className="w-4 h-4 bg-purple-500 rounded-full"></span>
+        </div>
+        <div className="flex items-center mt-4">
+          <span className="text-blue-900 text-sm font-thin">$26.00</span>
+          <span className="text-pink-500 text-sm font-thin line-through ml-2">$42.00</span>
+        </div>
+      </div>
+  <div className="flex flex-col items-center bg-white p-4 rounded-lg w-[270px] h-[363px]">
+  <Image
+          src={bag}
+          alt="Chair"
+          width={188}
+          height={188}
+          className=" object-cover bg-gray-50 p-9 w-[270px] h-[280px]"
+        />
+       
+        <h2 className="text-blue-900 text-lg font-semibold mt-4">Vel elit euismod</h2>
+        <div className="flex space-x-2 mt-2">
+          <span className="w-4 h-4 bg-orange-500 rounded-full"></span>
+          <span className="w-4 h-4 bg-pink-500 rounded-full"></span>
+          <span className="w-4 h-4 bg-purple-500 rounded-full"></span>
+        </div>
+        <div className="flex items-center mt-4">
+          <span className="text-blue-900 text-sm font-thin">$26.00</span>
+          <span className="text-pink-500 text-sm font-thin line-through ml-2">$42.00</span>
+        </div>
+      </div>
+      <div className="flex flex-col items-center  bg-white p-5 w-[270px] h-[363px]">
+  <Image
+          src={watch1}
+          alt="watch"
+          width={128}
+          height={139}
+          className=" object-cover bg-gray-100 p-14 w-[270px] h-[280px] "
+        />
+        <h2 className="text-blue-900 text-lg font-semibold mt-4">Vel elit euismod</h2>
+        <div className="flex space-x-2 mt-2">
+          <span className="w-4 h-4 bg-orange-500 rounded-full"></span>
+          <span className="w-4 h-4 bg-pink-500 rounded-full"></span>
+          <span className="w-4 h-4 bg-purple-500 rounded-full"></span>
+        </div>
+        <div className="flex items-center mt-4">
+          <span className="text-blue-900 text-sm font-thin">$26.00</span>
+          <span className="text-pink-500 text-sm font-thin line-through ml-2">$42.00</span>
+        </div>
+      </div>
+  <div className="flex flex-col items-center bg-white  p-5  w-[270px] h-[363px] ">
+  <Image
+          src={watch2}
+          alt="watch"
+          width={154}
+          height={158}
+          className=" object-cover bg-gray-100 p-9 w-[270px] h-[280px] "
+        />
+       
+        <h2 className="text-blue-900 text-lg font-semibold mt-4">Vel elit euismod</h2>
+        <div className="flex space-x-2 mt-2">
+          <span className="w-4 h-4 bg-orange-500 rounded-full"></span>
+          <span className="w-4 h-4 bg-pink-500 rounded-full"></span>
+          <span className="w-4 h-4 bg-purple-500 rounded-full"></span>
+        </div>
+        <div className="flex items-center mt-4">
+          <span className="text-blue-900 text-sm font-thin">$26.00</span>
+          <span className="text-pink-500 text-sm font-thin  line-through ml-2">$42.00</span>
+        </div>
+      </div>
+      <div className="flex flex-col items-center bg-white p-7   w-[270px] h-[363px]">
+  <Image
+          src={redHeadphone}
+          alt="redheadphone"
+          // width={114}
+          // height={144}
+          className=" object-cover bg-gray-100  p-14 w-[270px] h-[280px] "
+        />
+        <h2 className="text-blue-900 text-lg font-semibold mt-4">Vel elit euismod</h2>
+        <div className="flex space-x-2 mt-2">
+          <span className="w-4 h-4 bg-orange-500 rounded-full"></span>
+          <span className="w-4 h-4 bg-pink-500 rounded-full"></span>
+          <span className="w-4 h-4 bg-purple-500 rounded-full"></span>
+        </div>
+        <div className="flex items-center mt-4">
+          <span className="text-blue-900 text-sm font-thin">$26.00</span>
+          <span className="text-pink-500 text-sm font-thin line-through ml-2">$42.00</span>
+        </div>
+      </div>
+  <div className="flex flex-col items-center bg-white p-4  w-[270px] h-[363px]">
+  <Image
+          src={pinkSofa}
+          alt="Chair"
+          width={167}
+          height={167}
+          className=" object-cover bg-gray-100  p-9 w-[270px] h-[280px] "
+        />
+        <h2 className="text-blue-900 text-lg font-semibold mt-4">Vel elit euismod</h2>
+        <div className="flex space-x-2 mt-2">
+          <span className="w-4 h-4 bg-orange-500 rounded-full"></span>
+          <span className="w-4 h-4 bg-pink-500 rounded-full"></span>
+          <span className="w-4 h-4 bg-purple-500 rounded-full"></span>
+        </div>
+        <div className="flex items-center mt-4">
+          <span className="text-blue-900 text-sm font-thin">$26.00</span>
+          <span className="text-pink-500 text-sm font-thin line-through ml-2">$42.00</span>
+        </div>
+      </div>
+  <div className="flex flex-col items-center bg-white p-4 rounded-lg w-[270px] h-[363px]">
+  <Image
+          src={watch3}
+          alt="watch"
+          width={175}
+          height={151}
+          className=" object-cover bg-gray-100 p-9 w-[270px] h-[280px]"
+        />
+        <h2 className="text-blue-900 text-lg font-semibold mt-4">Vel elit euismod</h2>
+        <div className="flex space-x-2 mt-2">
+          <span className="w-4 h-4 bg-orange-500 rounded-full"></span>
+          <span className="w-4 h-4 bg-pink-500 rounded-full"></span>
+          <span className="w-4 h-4 bg-purple-500 rounded-full"></span>
+        </div>
+        <div className="flex items-center mt-4">
+          <span className="text-blue-900 text-sm font-thin">$26.00</span>
+          <span className="text-pink-500 text-sm font-thin line-through ml-2">$42.00</span>
+        </div>
+      </div>
+
+  <div className="flex flex-col items-center bg-white p-4 rounded-lg w-[270px] h-[369px]">
+        <Image
+          src={camera}
+          alt="camera"
+          width={169}
+          height={158}
+          className=" object-cover bg-gray-100 p-9 w-[270px] h-[280px]  "
+        />
+        <h2 className="text-blue-900 text-lg font-semibold mt-4">Vel elit euismod</h2>
+        <div className="flex space-x-2 mt-2">
+          <span className="w-4 h-4 bg-orange-500 rounded-full"></span>
+          <span className="w-4 h-4 bg-pink-500 rounded-full"></span>
+          <span className="w-4 h-4 bg-purple-500 rounded-full"></span>
+        </div>
+        <div className="flex items-center mt-4">
+          <span className="text-blue-900 text-sm font-thin">$26.00</span>
+          <span className="text-pink-500 text-sm font-thin line-through ml-2">$42.00</span>
+        </div>
+      </div>
+  <div className="flex flex-col items-center bg-white p-4 rounded-lg w-[270px] h-[363px]">
+        <Image
+          src={blackHeadphone}
+          alt="headphone"
+          width={168}
+          height={168}
+          className=" object-cover bg-gray-100 p-9 w-[270px] h-[280px]  "
+        />
+        <h2 className="text-blue-900 text-lg font-semibold mt-4">Vel elit euismod</h2>
+        <div className="flex space-x-2 mt-2">
+          <span className="w-4 h-4 bg-orange-500 rounded-full"></span>
+          <span className="w-4 h-4 bg-pink-500 rounded-full"></span>
+          <span className="w-4 h-4 bg-purple-500 rounded-full"></span>
+        </div>
+        <div className="flex items-center mt-4">
+          <span className="text-blue-900 text-sm font-thin">$26.00</span>
+          <span className="text-pink-500 text-sm font-thin line-through ml-2">$42.00</span>
+        </div>
+      </div>
+  <div className="flex flex-col items-center bg-white p-4 rounded-lg w-[270px] h-[363px] ">
+  <Image
+          src={bag}
+          alt="Chair"
+          width={188}
+          height={188}
+       
+          className=" object-cover bg-gray-100 p-9 w-[270px] h-[280px] "
+        />
+        <h2 className="text-blue-900 text-lg font-semibold mt-4">Vel elit euismod</h2>
+        <div className="flex space-x-2 mt-2">
+          <span className="w-4 h-4 bg-orange-500 rounded-full"></span>
+          <span className="w-4 h-4 bg-pink-500 rounded-full"></span>
+          <span className="w-4 h-4 bg-purple-500 rounded-full"></span>
+        </div>
+        <div className="flex items-center mt-4">
+          <span className="text-blue-900 text-sm font-thin">$26.00</span>
+          <span className="text-pink-500 text-sm font-thin line-through ml-2">$42.00</span>
+        </div>
+      </div>
+  
+  
+      </div>
+
+
+
 
 </div>
-<div className="w-full h-[286px] bg-[#E7E4F8] ">
- <div className="w-[500px] h-[62px] py-20 px-20 ">
-  <h1 className="font-bold text-4xl justify-center mb-3  ">Shop Grid Default</h1>
- 
-
-  <ul className="flex items-center justify-center space-x-4 font-[sans-serif]">
-      <li className="text-black text-base cursor-pointer">
-        Home
-      </li>
-      <li className="text-black text-lg">.</li>
-      <li className="text-black text-base cursor-pointer">
-        Pages
-      </li>
-      <li className="text-black text-lg">.</li>
-      <li className=" text-base  cursor-pointer hover:text-pink-500">
-        Shop grid Default
-      </li>
-    </ul>
-
-
-
-
-
-
- </div>  
-
- </div>
-
-
-
-
-
-</div>
-
-
-
 
 </>
       )

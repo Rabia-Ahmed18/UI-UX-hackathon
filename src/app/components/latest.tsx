@@ -51,6 +51,8 @@ export default function LatestProducts (){
 
       </div>
     </header>
+
+    
           <div className=" items-center  mb-12 space-x-4">    </div>      
       <div className="flex gap-8 items-center">
         

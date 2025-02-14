@@ -1,7 +1,7 @@
+"use client"
 
 import Image from 'next/image';
 import imageBottom from '../public/images/imageBottom.png';
-import ShopGridDefault from '../shopGridDefault/page';
 
 export default function Login(){
 
@@ -82,7 +82,7 @@ export default function Login(){
                               height={93}
                               className='ml-20'/>
                             </div>
-                            <ShopGridDefault/>
+                            
                              </>
                                  
                                 )

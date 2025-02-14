@@ -1,3 +1,4 @@
+
 import React from "react";
 import Image from "next/image";
 import F1 from '../public/images/F1.png';
